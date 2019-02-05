@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BallBehaviour.cs" />
+     <Compile Include="Assets\Scripts\DeadZone.cs" />
      <Compile Include="Assets\Scripts\MovePaddle.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/home/gollum23/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
