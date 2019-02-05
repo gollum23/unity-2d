@@ -5,13 +5,15 @@ using UnityEngine;
 public class BallBehaviour : MonoBehaviour
 {
     public Transform paddle;
-    bool gameStarted = false;
+    public bool gameStarted = false;
 
     public Rigidbody2D rbBall;
+
+    float posDiff = 0;
     // Start is called before the first frame update
     void Start()
     {
-        
+        posDiff = paddle.position.x - transform.position.x;
     }
 
     // Update is called once per frame
@@ -19,7 +21,7 @@ public class BallBehaviour : MonoBehaviour
     {
         if(!gameStarted)
         {
-            float posDiff = paddle.position.x - transform.position.x;
+            
             transform.position = new Vector3(paddle.position.x - posDiff, paddle.position.y, paddle.position.z);
             if(Input.GetMouseButtonDown(0))
             {
